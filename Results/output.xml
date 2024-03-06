@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.1 on win32)" generated="2024-03-04T08:54:49.889288" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="H:\dossiers\testlogiciel\tests">
+<suite id="s1-s1" name="Main" source="H:\dossiers\testlogiciel\tests\main.robot">
+<test id="s1-s1-t1" name="Main Test" line="13">
+<kw name=" First keyword">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-04T08:54:50.368288" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg time="2024-03-04T08:56:15.590584" level="WARN">Exception managing chrome: error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: tcp connect error: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu. (os error 10060)</msg>
+<msg time="2024-03-04T08:56:15.608963" level="WARN">The chromedriver version (121.0.6167.85) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver  is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>about:blank</arg>
+<arg>${navigator}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-04T08:54:50.368288" elapsed="87.720038"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-04T08:56:18.089324" elapsed="0.137809"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-03-04T08:56:18.228131" level="INFO">Opening url 'https://www.google.com/chrome'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-03-04T08:56:18.228131" elapsed="4.108796"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-04T08:56:22.337927" elapsed="2.465657"/>
+</kw>
+<status status="PASS" start="2024-03-04T08:54:50.366280" elapsed="94.438303"/>
+</kw>
+<status status="PASS" start="2024-03-04T08:54:50.365283" elapsed="94.443300"/>
+</test>
+<status status="PASS" start="2024-03-04T08:54:49.946356" elapsed="94.873219"/>
+</suite>
+<status status="PASS" start="2024-03-04T08:54:49.896798" elapsed="94.937750"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Main">Tests.Main</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-03-04T08:56:15.590584" level="WARN">Exception managing chrome: error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: tcp connect error: Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu. (os error 10060)</msg>
+<msg time="2024-03-04T08:56:15.608963" level="WARN">The chromedriver version (121.0.6167.85) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver  is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
